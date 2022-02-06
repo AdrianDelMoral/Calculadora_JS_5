@@ -1,0 +1,68 @@
+:root{
+  --gris-fondo: #808080;
+  --color-negro: #000000;
+  --gris-bordes:#9b9b9b;
+  --color-blanco: #ffffff;
+  --color-naranja:#ff8000;
+}
+
+* {
+  box-sizing: border-box;
+  background: var(--color-negro);
+}
+.alinear-calculadora{
+  display: grid;
+  height: 741px;
+  align-items: center;
+  justify-content: center;
+}
+.calculadora{
+    max-width:420px;
+    border:1px solid var(--gris-bordes);
+}
+.botones-calculadora{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.display{
+  background: var(--color-negro);
+  color: var(--color-blanco);
+  font-size: 1.5em;
+  padding: 1.5em;
+  height: 100px;
+  width: 200px;
+  font-size:1.5em;
+  font-style: italic;
+  font-family: serif;
+  text-align: right;
+  border-right:1px solid var(--gris-bordes);
+  border-bottom:1px solid var(--gris-bordes);
+  grid-column: span 2;
+}
+.botones-numeros  {
+    font-size:1.5em;
+    height: 100px;
+    border:1px solid black;
+    color: var(--color-blanco);
+    background-color: #000 ;
+}
+
+.botones-numeros:hover{
+  background: var(--gris-fondo);
+  color: var(--color-negro);
+  transition: 1s;
+}
+
+.botones-naranjas {
+  font-size:1.5em;
+  height: 100px;
+  border:1px solid var(--color-negro);
+  color: var(--color-naranja);
+  background-color: var(--color-negro);
+}
+
+.botones-naranjas:hover{
+    background: var(--gris-fondo);
+    color: var(--color-naranja);
+    transition: 1s;
+}
